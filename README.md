@@ -14,7 +14,7 @@ A minimal example project that demonstrates how to structure, build, and install
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Using pip (from GitHub)
 
@@ -25,16 +25,8 @@ pip install git+https://github.com/realcaptainsolaris/fileparser.git@v0.1.0
 ### Using uv (recommended)
 
 ```bash
-uv pip install git+https://github.com/realcaptainsolaris/fileparser.git@v0.1.0
+uv add git+https://github.com/realcaptainsolaris/fileparser.git@v0.1.0
 ```
-
-Or, for local development:
-
-```bash
-uv venv
-uv pip install -e .[dev]
-```
-
 ---
 
 ## 🚀 Usage
@@ -76,12 +68,15 @@ FileInfo(name='example', suffix='.txt', type='txt')
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 Install the development dependencies and run the test suite:
 
 ```bash
 uv pip install -e .[dev]
+oder
+uv add --dev pytest
+
 uv run pytest
 ```
 
